@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="description" content="Memory Game">
+	<meta name="author" content="Harpreet Singh">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<title>Memory!</title>
+
+</head>
+<body>
+	<h1>Memory!</h1>
+	<p><button id="start-game">Start New Game</button></p>
+	<div>
+		<button id="help" type="button" class="btn btn-warning" title="Instructions"  
+			data-container="body" data-toggle="popover" data-placement="left" 
+			data-content="Select two tiles to see if they match. If they match, they will remain face up, if they don't they will flip back over. You win when you have matched all the tiles. The goal is to do this as quickly as possible and with the fewest amount of misses.">
+			Need Help?
+		</button>
+	</div>
+	<div id="stats">
+		<p>Elapsed Time: <span id="elapsed-seconds"></span></p>
+		<p>Remaining: <span id="remaining"></span></p>
+		<p>Misses: <span id="misses"></span></p>
+		<p>Matches: <span id="matches"></span></p>
+	</div>
+
+	<p id="gameOver">Congratulations! You've found all the matches!</p>
+
+	<div id="game-board"></div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
